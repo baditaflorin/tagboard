@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b0b10" />
+    <meta
+      name="description"
+      content="AprilTag-anchored AR sticky notes. Point your camera at a printed tag, shared notes appear in space."
+    />
+    <title>TagBoard — AprilTag AR notes</title>
+    <!-- js-aruco2: vendored, MIT. Registers window.CV and window.AR. -->
+    <script src="./aruco/cv.js"></script>
+    <script src="./aruco/aruco.js"></script>
+    <script src="./aruco/dictionaries/apriltag_36h11.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
